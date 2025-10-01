@@ -3,6 +3,9 @@ This project demonstrates the "Fast and Furious Integration Challenge," showcasi
 
 The application is built with a Python Flask backend and a simple vanilla JavaScript frontend, simulating a typical online banking user journey: Login -> Account Overview -> Make Payment.
 
+Video Explanation
+[https://drive.google.com/file/d/1hJdMMqGMYTtjupeo6pwriyJoohOaX2Xq/view?usp=sharing](url)
+
 Core Concepts & Architecture
 This solution correctly implements the two key components required by the BioCatch integration challenge:
 
@@ -101,4 +104,4 @@ Session Management: The session function waits for the cdApi object to be ready 
 API Trigger: The triggerAPI function sends fetch requests containing the required payloads to the local Flask /api/proxy endpoint, abstracting away the final destination from the client-side code.
 
 Bonus Questions
-The answers to the bonus questions are detailed in the Assessment Bonus Questions.md file. This project's architecture directly implements the best practice outlined in Question 5, demonstrating why API calls should be handled by a secure backend.
+The answers to the bonus questions are detailed in the Assessment bonus-questions.md file.
