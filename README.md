@@ -101,4 +101,4 @@ Session Management: The session function waits for the cdApi object to be ready 
 API Trigger: The triggerAPI function sends fetch requests containing the required payloads to the local Flask /api/proxy endpoint, abstracting away the final destination from the client-side code.
 
 Bonus Questions
-The answers to the bonus questions are detailed in the Assessment Bonus Questions.md file. This project's architecture directly implements the best practice outlined in Question 5, demonstrating why API calls should be handled by a secure backend.
+The answers to the bonus questions are detailed in the bonus-questions.md file. This project's architecture directly implements the best practice outlined in Question 5, demonstrating why API calls should be handled by a secure backend.
