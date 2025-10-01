@@ -19,7 +19,7 @@ biocatch-integration/
 │
 ├── static/
 │   └── js/
-│       └── back-biocatch-test.js       # Frontend logic, BioCatch SDK interaction.
+│       └── front-biocatch-test.js       # Frontend logic, BioCatch SDK interaction.
 │
 ├── templates/
 │   ├── index.html            # Login page.
@@ -93,7 +93,7 @@ Web Server: Uses the @app.route() decorator to define URL paths (/, /account_ove
 
 Secure API Proxy: The /api/proxy route is the most important part. It accepts JSON data from the frontend, securely forwards it to the real BioCatch API endpoint using the requests library, and then relays the response back to the client. This is the correct implementation for a production environment as it hides the final API endpoint and prevents CORS issues.
 
-biocatch.js (The Frontend)
+front-biocatch-test (The Frontend)
 SDK Loader: Dynamically loads the official BioCatch JavaScript agent from the CDN specified in the documentation.
 
 Session Management: The initializeSession function waits for the cdApi object to be ready and then calls cdApi.changeContext() and cdApi.setCustomerSessionId() to manage the user's session state as they navigate the site.
