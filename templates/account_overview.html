@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Overview</title>
+</head>
+<body>
+    <h1>Account Overview</h1>
+    <p>Welcome! What would you like to do?</p>
+    <button onclick="location.href='/make_payment'">Make Payment</button>
+    <button onclick="logout()">Logout</button>
+    <script src="{{ url_for('static', filename='js/back-biocatch-test.js') }}"async onload="session('Account Overview')"></script>
+</body>
+</html>

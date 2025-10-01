@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make Payment</title>
+</head>
+<body>
+    <h1>Make Payment</h1>
+    <form onsubmit="makePayment(event)">
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Submit Payment</button>
+    </form>
+    <br>
+    <a href="/account_overview">Back to Account Overview</a>
+
+    <script src="{{ url_for('static', filename='js/back-biocatch-test.js') }}" async onload="session('Make Payment')" ></script>
+</body>
+</html>
