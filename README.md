@@ -96,7 +96,7 @@ Secure API Proxy: The /api/proxy route is the most important part. It accepts JS
 front-biocatch-test (The Frontend)
 SDK Loader: Dynamically loads the official BioCatch JavaScript agent from the CDN specified in the documentation.
 
-Session Management: The initializeSession function waits for the cdApi object to be ready and then calls cdApi.changeContext() and cdApi.setCustomerSessionId() to manage the user's session state as they navigate the site.
+Session Management: The session function waits for the cdApi object to be ready and then calls cdApi.changeContext() and cdApi.setCustomerSessionId() to manage the user's session state as they navigate the site.
 
 API Trigger: The triggerAPI function sends fetch requests containing the required payloads to the local Flask /api/proxy endpoint, abstracting away the final destination from the client-side code.
 
